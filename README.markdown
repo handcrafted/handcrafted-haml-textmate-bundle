@@ -4,7 +4,9 @@
 
 The Handcrafted HAML TextMate Bundle is a TextMate bundle to aid in rapid HAML development.
 
-Some of this bundle was ported from the official Ruby Haml.tmbundle.
+##Contribution
+
+Some of this bundle was ported from the official Ruby Haml TextMate bundle. The filter snippets were ported from Matt Polito.
 
 ##Installation
 
