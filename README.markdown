@@ -4,9 +4,11 @@
 
 The Handcrafted HAML TextMate Bundle is a TextMate bundle to aid in rapid HAML development.
 
-##Contribution
+##Credits
 
-Some of this bundle was ported from the official Ruby Haml TextMate bundle. The filter snippets were ported from Matt Polito.
+Created by [Adam Stacoviak](http://www.adamstacoviak.com/ "Adam Stacoviak | Web Development, Interface Design, User Experience &amp; Internet Marketing"), co-founder of [Handcrafted](http://gethandcrafted.com/ "Handcrafted &ndash; Ruby on Rails Development Consulting Firm, Interface Design, User Experience, Web Marketing"), a Rails Development Consulting Firm.
+
+Parts of this bundle were ported from the official Ruby Haml TextMate bundle. The filter snippets were ported from [Matt Polito's ruby-haml.tmbundle](http://github.com/mattpolito/ruby-haml.tmbundle/tree "mattpolito's ruby-haml.tmbundle at master - GitHub").
 
 ##Installation
 
