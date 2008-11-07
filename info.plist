@@ -14,12 +14,14 @@
 		<array>
 			<string>9CD5ABE1-9E49-42BB-9C09-AEE74103FB53</string>
 			<string>B0941E04-6945-4200-90F3-644D36B11BC7</string>
+			<string>8A8571E5-4E68-48E5-92A2-CC25B07B682E</string>
 			<string>1771DB76-7112-4467-9820-A50CC6259977</string>
+			<string>AFCFCFFD-5FD3-4558-879F-F031803A2D33</string>
+			<string>BA5ED80D-7359-4F31-9274-9774D7E4D1A1</string>
+			<string>B5AF3E39-52A7-45FA-9E1C-C61E8FAE7BB8</string>
+			<string>0D2C517F-86F6-4CF4-9E80-417D9360820F</string>
 			<string>B9718DAD-7E7E-401C-8055-582FBC1B6396</string>
 			<string>2D17F327-D2B4-4330-80C3-D25C2A0F930F</string>
-			<string>0D2C517F-86F6-4CF4-9E80-417D9360820F</string>
-			<string>B5AF3E39-52A7-45FA-9E1C-C61E8FAE7BB8</string>
-			<string>8A8571E5-4E68-48E5-92A2-CC25B07B682E</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -71,6 +73,16 @@
 				<key>name</key>
 				<string>Block Elements</string>
 			</dict>
+			<key>AFCFCFFD-5FD3-4558-879F-F031803A2D33</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>22E3E848-CE90-401B-9DFF-9AEF23A3A692</string>
+					<string>C009FB53-7486-4875-9ECD-3E45ACA215C4</string>
+				</array>
+				<key>name</key>
+				<string>Document Head</string>
+			</dict>
 			<key>B0941E04-6945-4200-90F3-644D36B11BC7</key>
 			<dict>
 				<key>items</key>
@@ -78,6 +90,7 @@
 					<string>3D8DDFF1-E395-4891-95E3-DF6A7C09C654</string>
 					<string>CF181FCB-FF91-467D-935D-37CF49B79503</string>
 					<string>4F770436-C222-4CEC-B676-674A73AADB15</string>
+					<string>------------------------------------</string>
 					<string>6BEE3DBD-CF1B-45F6-9E11-0D866EA4C7FD</string>
 				</array>
 				<key>name</key>
@@ -103,6 +116,23 @@
 				</array>
 				<key>name</key>
 				<string>Link to</string>
+			</dict>
+			<key>BA5ED80D-7359-4F31-9274-9774D7E4D1A1</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>1E602C70-07F0-4DA1-A7F0-F0A7B79A9986</string>
+					<string>1CE1209F-48C4-4AF4-BCF5-A87BCACDE49B</string>
+					<string>9928C8FC-34E5-4A91-9CFA-4DAC2E67300B</string>
+					<string>DCCD30EE-6AB8-4728-AB6A-D4D653DBB3C6</string>
+					<string>B76E1A7C-97EF-45A1-8D35-9FE02D1014A2</string>
+					<string>B2CD0CD9-59F0-473A-B957-3C06DF4E9686</string>
+					<string>7D0A65A5-7462-4F2F-BA34-4524D436DE56</string>
+					<string>27446073-264F-4293-9350-485043B593F3</string>
+					<string>23EDEA58-8C31-499B-901C-4BB03B08E3A8</string>
+				</array>
+				<key>name</key>
+				<string>Filters</string>
 			</dict>
 		</dict>
 	</dict>
