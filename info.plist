@@ -6,6 +6,10 @@
 	<string>xriva@fo.bet</string>
 	<key>contactName</key>
 	<string>Kevin Ballard</string>
+	<key>deleted</key>
+	<array>
+		<string>22E3E848-CE90-401B-9DFF-9AEF23A3A692</string>
+	</array>
 	<key>description</key>
 	<string>&lt;a href="http://unspace.ca/discover/haml"&gt;HTML Abstraction Markup Language&lt;/a&gt; is a templating engine for Ruby on Rails.</string>
 	<key>mainMenu</key>
@@ -173,10 +177,13 @@
 		<string>097169D1-D454-4408-A813-078AF6D203EB</string>
 		<string>F90440E7-FDA3-4FA3-BBC0-8B683F29F4CC</string>
 		<string>6BEE3DBD-CF1B-45F6-9E11-0D866EA4C7FD</string>
-		<string>22E3E848-CE90-401B-9DFF-9AEF23A3A692</string>
 		<string>4C2E088A-2EDB-44DF-9C62-CE0112B4C237</string>
+		<string>B3EE939A-C892-4F55-9405-0A131E5F7E93</string>
+		<string>A6E85660-D41A-4820-B13C-AA7ABEE35E0E</string>
+		<string>47E648DA-A348-4102-B85A-76D25A584E91</string>
 		<string>9CD5ABE1-9E49-42BB-9C09-AEE74103FB53</string>
 		<string>3D727049-DD05-45DF-92A5-D50EA36FD035</string>
+		<string>C009FB53-7486-4875-9ECD-3E45ACA215C4</string>
 	</array>
 	<key>uuid</key>
 	<string>4618480A-F4C3-40FE-8719-DE54CBDFB92A</string>
