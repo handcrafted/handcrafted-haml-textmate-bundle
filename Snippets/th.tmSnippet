@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>, :${1:id} =&gt; "${2:selector}"$0</string>
+	<string>%th $0</string>
 	<key>name</key>
-	<string>}, :id =&gt; "selector"</string>
+	<string>th</string>
 	<key>scope</key>
-	<string>text.haml, meta.section.attributes.haml</string>
+	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>,</string>
+	<string>th</string>
 	<key>uuid</key>
-	<string>3D8DDFF1-E395-4891-95E3-DF6A7C09C654</string>
+	<string>5D249861-A7FA-4E40-8FF7-BB5C0CD4A3E1</string>
 </dict>
 </plist>
