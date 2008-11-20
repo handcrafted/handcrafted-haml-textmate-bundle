@@ -4,21 +4,16 @@
 <dict>
 	<key>content</key>
 	<string>%table
-  %thead
-    %tr
-      %th
-        ${1:Table Heading}
-  %tbody
-    %tr
-      %td
-        ${1:Table Data}</string>
+  %tr
+    %td
+      ${1:Table Data}</string>
 	<key>name</key>
-	<string>table (tempalted)</string>
+	<string>table (basic)</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
 	<string>t</string>
 	<key>uuid</key>
-	<string>277F94D2-7D8C-495F-A736-4A610E8F1D77</string>
+	<string>7B78C95E-DD54-4FED-B2A5-B6227A9978E0</string>
 </dict>
 </plist>
