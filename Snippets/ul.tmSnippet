@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%ul${2:{:${3:id} =&gt; "${4:selector}"$5\}}
-	%li ${6:Lorem ipsum dolor sit amet, consectetur adipisicing elit.}$0</string>
+	<string>%ul${1:#${2:selector}}
+	%li ${3:Lorem ipsum dolor sit amet, consectetur adipisicing elit.}$0</string>
 	<key>name</key>
 	<string>ul</string>
 	<key>scope</key>
