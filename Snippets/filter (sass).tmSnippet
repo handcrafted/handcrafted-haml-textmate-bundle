@@ -10,7 +10,7 @@
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>filter</string>
+	<string>:f</string>
 	<key>uuid</key>
 	<string>27446073-264F-4293-9350-485043B593F3</string>
 </dict>

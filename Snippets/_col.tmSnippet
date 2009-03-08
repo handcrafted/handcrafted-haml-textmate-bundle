@@ -3,15 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>:markdown
-	$0</string>
+	<string>.columns.clearfix
+  .column.one
+  .column.two
+  .column.three</string>
 	<key>name</key>
-	<string>filter (markdown)</string>
+	<string>.col</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>:f</string>
+	<string>.col</string>
 	<key>uuid</key>
-	<string>DCCD30EE-6AB8-4728-AB6A-D4D653DBB3C6</string>
+	<string>715DD66F-170B-477E-B128-88A6A58CBB47</string>
 </dict>
 </plist>

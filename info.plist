@@ -21,17 +21,15 @@
 			<string>390D96F8-0EBD-42AD-AA4D-3927946E9806</string>
 			<string>1771DB76-7112-4467-9820-A50CC6259977</string>
 			<string>8A8571E5-4E68-48E5-92A2-CC25B07B682E</string>
+			<string>9CA9877E-F8EC-40A3-9FD7-6BDDA74B7DE9</string>
 			<string>98DF4FB4-0EE3-44B1-890B-92C56E613CC0</string>
 			<string>BA5ED80D-7359-4F31-9274-9774D7E4D1A1</string>
 			<string>B5AF3E39-52A7-45FA-9E1C-C61E8FAE7BB8</string>
+			<string>AD2B7E89-5621-47B6-882D-BB8C49B661B3</string>
 			<string>0D2C517F-86F6-4CF4-9E80-417D9360820F</string>
 			<string>B9718DAD-7E7E-401C-8055-582FBC1B6396</string>
 			<string>2D17F327-D2B4-4330-80C3-D25C2A0F930F</string>
 			<string>E8B8770A-25A7-4FB3-9823-87604F172031</string>
-			<string>AA62925A-EB31-4159-9BAF-0CFC94923E42</string>
-			<string>3B3E18FC-9EE1-48B9-A293-274587B502AD</string>
-			<string>536D8475-F2B3-46D9-AC68-203D98FC8E58</string>
-			<string>4F5A07B2-9672-4F37-9D5E-F3D4FE5E81D9</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -87,6 +85,7 @@
 					<string>2B7686C1-C91A-401E-9035-5E29CB43C2D2</string>
 					<string>6C21CE80-6282-4324-A90E-0339FCE520CF</string>
 					<string>------------------------------------</string>
+					<string>AA62925A-EB31-4159-9BAF-0CFC94923E42</string>
 					<string>A9CEE369-9E70-4AD8-9E1C-387B7882E228</string>
 				</array>
 				<key>name</key>
@@ -102,6 +101,26 @@
 				</array>
 				<key>name</key>
 				<string>Doctype</string>
+			</dict>
+			<key>9CA9877E-F8EC-40A3-9FD7-6BDDA74B7DE9</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>3B3E18FC-9EE1-48B9-A293-274587B502AD</string>
+					<string>536D8475-F2B3-46D9-AC68-203D98FC8E58</string>
+					<string>4F5A07B2-9672-4F37-9D5E-F3D4FE5E81D9</string>
+				</array>
+				<key>name</key>
+				<string>Inline Elements</string>
+			</dict>
+			<key>AD2B7E89-5621-47B6-882D-BB8C49B661B3</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>715DD66F-170B-477E-B128-88A6A58CBB47</string>
+				</array>
+				<key>name</key>
+				<string>Frameworks</string>
 			</dict>
 			<key>B0941E04-6945-4200-90F3-644D36B11BC7</key>
 			<dict>
@@ -180,6 +199,7 @@
 		<string>330820E8-E917-47F1-B1C7-64CEAF03B444</string>
 		<string>CF181FCB-FF91-467D-935D-37CF49B79503</string>
 		<string>3D8DDFF1-E395-4891-95E3-DF6A7C09C654</string>
+		<string>715DD66F-170B-477E-B128-88A6A58CBB47</string>
 		<string>AA62925A-EB31-4159-9BAF-0CFC94923E42</string>
 		<string>3B3E18FC-9EE1-48B9-A293-274587B502AD</string>
 		<string>B6FED2DD-4A63-4FFB-9035-0630A66923DA</string>
