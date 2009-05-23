@@ -8,12 +8,12 @@
   .column.two
   .column.three</string>
 	<key>name</key>
-	<string>.col</string>
+	<string>.columns</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>.col</string>
+	<string>.c</string>
 	<key>uuid</key>
-	<string>715DD66F-170B-477E-B128-88A6A58CBB47</string>
+	<string>4DA86A74-2889-48B7-962A-BBE451066B6B</string>
 </dict>
 </plist>
