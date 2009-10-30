@@ -228,13 +228,19 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>&lt;|&gt;</string>
+			<string>&lt;(?!(?i:a|abbr|access|acronym|action|address|applet|area|article|aside|audio|b|base|basefont|big|blockcode|blockquote|body|br|button|canvas|caption|center|cite|code|col|colgroup|command|datalist|dd|del|delete|details|di|dir|dispatch|div|dl|dt|em|embed|fieldset|figure|font|footer|form|frame|frameset|group|h|h1|h2|h3|h4|h5|h6|handler|head|header|hgroup|hr|html|i|iframe|img|input|ins|insert|l|label|legend|li|link|listing|load|map|mark|menu|message|meta|meter|nav|noframes|noscript|object|ol|optgroup|option|output|p|param|plaintext|pre|progress|samp|script|secret|section|select|separator|small|source|span|strike|strong|style|sub|submit|summary|switch|table|tbody|td|textarea|tfoot|th|thead|title|tr|trigger|tt|u|ul|upload|video|/|%))</string>
 			<key>name</key>
 			<string>keyword.other.angle-bracket.haml</string>
 		</dict>
 		<dict>
 			<key>include</key>
 			<string>text.html.basic</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>&gt;</string>
+			<key>name</key>
+			<string>keyword.other.angle-bracket.haml</string>
 		</dict>
 	</array>
 	<key>repository</key>
