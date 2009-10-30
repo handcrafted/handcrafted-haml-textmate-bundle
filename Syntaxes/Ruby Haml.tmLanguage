@@ -99,7 +99,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>[^\\]\}</string>
+			<string>(?&lt;!\\)\}</string>
 			<key>name</key>
 			<string>source.ruby.embedded.source</string>
 			<key>patterns</key>
