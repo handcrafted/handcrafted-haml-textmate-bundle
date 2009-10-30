@@ -226,6 +226,10 @@
 				</dict>
 			</array>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.html.basic</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
