@@ -227,6 +227,12 @@
 			</array>
 		</dict>
 		<dict>
+			<key>match</key>
+			<string>&lt;|&gt;</string>
+			<key>name</key>
+			<string>keyword.other.angle-bracket.haml</string>
+		</dict>
+		<dict>
 			<key>include</key>
 			<string>text.html.basic</string>
 		</dict>
