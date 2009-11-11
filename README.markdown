@@ -9,6 +9,7 @@ Forked from the Handcrafted HAML TextMate Bundle.  Additions include
  * Added html language (lowest priority). Helpful when your haml includes things like &amp;amp;. Also helpful if you're mixing haml with html.
  * Added more helpful snippets for ruby style attributes (: and => triggers)
  * Updated language so that < and > are recognized as HAML constants (language is still smart enough such that when < and > are used with HTML or erb, it treats it as such)
+ * Adding full trigger snippets for common html elements (ie table + tab, span + tab) to supplement the existing short trigger snippets (ie t + table, s + tab)
 
 ##Credits
 
