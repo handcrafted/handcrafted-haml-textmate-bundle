@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%h1 ${1:Heading Level 1}
+	<string>%h1 ${1:Heading Level 2}
 $0</string>
 	<key>name</key>
 	<string>h1</string>

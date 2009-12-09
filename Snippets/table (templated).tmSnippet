@@ -6,8 +6,7 @@
 	<string>%table
   %thead
     %tr
-      %th
-        ${1:Table Heading}
+      %th ${1:Table Heading}
   %tbody
     %tr
       %td

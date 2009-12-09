@@ -3,7 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%table$0 $1</string>
+	<string>%table
+  %thead
+    %tr
+      %th $0
+  %tbody
+    %tr
+      %td</string>
 	<key>name</key>
 	<string>table (full trigger)</string>
 	<key>scope</key>

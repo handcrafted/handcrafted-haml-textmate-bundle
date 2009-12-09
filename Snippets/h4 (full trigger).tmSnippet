@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%span $0</string>
+	<string>%h4 $0</string>
 	<key>name</key>
-	<string>span (full trigger)</string>
+	<string>h4 (full trigger)</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>span</string>
+	<string>h4</string>
 	<key>uuid</key>
-	<string>4EADD8C8-9E94-43CA-B04D-78F8CEB34EED</string>
+	<string>25753A3C-5527-4960-87B7-6C5A386C3E25</string>
 </dict>
 </plist>
