@@ -11,10 +11,14 @@ export TM_RUBY=$(which "${TM_RUBY:-ruby}")
 "${TM_RUBY}" -e "require 'rubygems'; gem 'haml'; require 'haml/html'; puts Haml::HTML.new(ENV['TM_SELECTED_TEXT']).render"</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~@c</string>
 	<key>name</key>
 	<string>Convert HTML to HAML</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
+	<key>scope</key>
+	<string>text.html</string>
 	<key>uuid</key>
 	<string>9CD5ABE1-9E49-42BB-9C09-AEE74103FB53</string>
 </dict>
