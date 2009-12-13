@@ -18,7 +18,7 @@ export TM_RUBY=$(which "${TM_RUBY:-ruby}")
 	<key>output</key>
 	<string>replaceSelectedText</string>
 	<key>scope</key>
-	<string>text.html</string>
+	<string>text.html,text.haml</string>
 	<key>uuid</key>
 	<string>9CD5ABE1-9E49-42BB-9C09-AEE74103FB53</string>
 </dict>
