@@ -45,7 +45,7 @@ print result</string>
 	<key>keyEquivalent</key>
 	<string>^&gt;</string>
 	<key>name</key>
-	<string>Toggle ERb Tags copy</string>
+	<string>Toggle #{} Tags</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
