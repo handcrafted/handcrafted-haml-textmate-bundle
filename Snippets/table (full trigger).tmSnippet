@@ -6,7 +6,7 @@
 	<string>%table
   %thead
     %tr
-      %th $0
+      %th$0
   %tbody
     %tr
       %td</string>

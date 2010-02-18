@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%h4 $0</string>
+	<string>%h4$0</string>
 	<key>name</key>
 	<string>h4 (full trigger)</string>
 	<key>scope</key>

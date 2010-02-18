@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%em $0</string>
+	<string>%em$0</string>
 	<key>name</key>
 	<string>emphasized (full trigger)</string>
 	<key>scope</key>
