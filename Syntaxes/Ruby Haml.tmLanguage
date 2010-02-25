@@ -242,6 +242,10 @@
 			<key>name</key>
 			<string>keyword.other.angle-bracket.haml</string>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>#erb</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -257,6 +261,22 @@
 			</dict>
 			<key>match</key>
 			<string>(\|)\s*\n</string>
+		</dict>
+		<key>erb</key>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):erb</string>
+			<key>end</key>
+			<string>^(?!\1 )</string>
+			<key>name</key>
+			<string>text.html.ruby.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.html.ruby</string>
+				</dict>
+			</array>
 		</dict>
 		<key>nest_curly_and_self</key>
 		<dict>
