@@ -5,10 +5,22 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>export RUBYLIB="$TM_BUNDLE_SUPPORT/vendor/rcodetools/lib${RUBYLIB:+:$RUBYLIB}"
-export TM_RUBY=$(which "${TM_RUBY:-ruby}")
+	<string>#!/usr/bin/env ruby
 
-"${TM_RUBY}" -e "require 'rubygems'; gem 'haml'; require 'haml/html'; puts Haml::HTML.new(ENV['TM_SELECTED_TEXT']).render"</string>
+require 'rubygems'
+gem 'haml'
+require 'haml/html'
+
+match = ENV['TM_SELECTED_TEXT'].split("\n").first.match(/^(\s+).*/)
+if match
+  initial_tabs = match[1]
+else
+  initial_tabs = ''
+end
+
+out = Haml::HTML.new(ENV['TM_SELECTED_TEXT'].gsub(/\s*&lt;%\s*\s*end\s*%&gt;\s*/, '').gsub(/\s*%&gt;/, '').gsub(/&lt;%=\s*/, '= ').gsub(/&lt;%-?\s*/, '- ')).render.gsub('\-','-').gsub('\=', '=')
+out = out.split("\n").map { |line| "#{initial_tabs}#{line}" }.join("\n")
+print out</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
