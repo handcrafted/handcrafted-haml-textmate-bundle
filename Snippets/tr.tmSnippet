@@ -4,8 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>%tr
-  %${1:td}
-    ${2:Table Data} $0</string>
+  %${1:td}$0</string>
 	<key>name</key>
 	<string>tr</string>
 	<key>scope</key>
