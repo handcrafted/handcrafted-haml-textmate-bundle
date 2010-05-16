@@ -21,13 +21,13 @@ Forked from the Handcrafted HAML TextMate Bundle.  Additions include
 ####Other Textmate Bundles
 My bundles work best when use in conjunction with my other bundles:
 
- * Rails - [http://github.com/phuibonhoa/ruby-on-rails-tmbundle]
- * Ruby - [http://github.com/phuibonhoa/ruby-tmbundle]
- * Shoulda - [http://github.com/phuibonhoa/ruby-shoulda-tmbundle]
- * HAML - [http://github.com/phuibonhoa/handcrafted-haml-textmate-bundle]
- * Sass - [http://github.com/phuibonhoa/ruby-sass-tmbundle]
- * JavaScript - [http://github.com/phuibonhoa/Javascript-Bundle-Extension]
- * CTags - [http://github.com/phuibonhoa/tm-ctags-tmbundle]
+ * Rails - [http://github.com/phuibonhoa/ruby-on-rails-tmbundle](http://github.com/phuibonhoa/ruby-on-rails-tmbundle)
+ * Ruby - [http://github.com/phuibonhoa/ruby-tmbundle](http://github.com/phuibonhoa/ruby-tmbundle)
+ * Shoulda - [http://github.com/phuibonhoa/ruby-shoulda-tmbundle](http://github.com/phuibonhoa/ruby-shoulda-tmbundle)
+ * HAML - [http://github.com/phuibonhoa/handcrafted-haml-textmate-bundle](http://github.com/phuibonhoa/handcrafted-haml-textmate-bundle)
+ * Sass - [http://github.com/phuibonhoa/ruby-sass-tmbundle](http://github.com/phuibonhoa/ruby-sass-tmbundle)
+ * JavaScript - [http://github.com/phuibonhoa/Javascript-Bundle-Extension](http://github.com/phuibonhoa/Javascript-Bundle-Extension)
+ * CTags - [http://github.com/phuibonhoa/tm-ctags-tmbundle](http://github.com/phuibonhoa/tm-ctags-tmbundle)
 
 ##Credits
 
