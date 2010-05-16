@@ -39,5 +39,5 @@ Parts of this bundle were ported from the official Ruby Haml TextMate bundle. Th
 ##Installation
 
 1. $ `cd ~/Library/Application\ Support/TextMate/Bundles/`
-2. $ `git clone git://github.com/handcrafted/handcrafted-haml-textmate-bundle.git HAML-Handcrafted.tmbundle`
+2. $ `git clone git://github.com/handcrafted/handcrafted-haml-textmate-bundle.git Haml.tmbundle`
 3. $ `osascript -e 'tell app "TextMate" to reload bundles'`
