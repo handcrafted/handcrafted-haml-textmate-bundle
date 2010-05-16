@@ -17,6 +17,12 @@ Forked from the Handcrafted HAML TextMate Bundle.  Additions include
  * Added full trigger snippets for common html elements (ie table, br, div, h1, h2, etc.)
  * <code> ⌘+/</code> uses rails comments -# instead of HTML comments
  * <code>⌘⌥+X</code> escapes HTML special characters
+
+##Installation
+
+1. $ `cd ~/Library/Application\ Support/TextMate/Bundles/`
+2. $ `git clone git://github.com/handcrafted/handcrafted-haml-textmate-bundle.git Haml.tmbundle`
+3. $ `osascript -e 'tell app "TextMate" to reload bundles'`
  
 ####Other Textmate Bundles
 My bundles work best when use in conjunction with my other bundles:
@@ -36,9 +42,3 @@ Additions by [Philippe Huibonhoa](http://github.com/phuibonhoa)
 Original Bundle Created by [Adam Stacoviak](http://www.adamstacoviak.com/ "Adam Stacoviak | Web Development, Interface Design, User Experience &amp; Internet Marketing"), co-founder of [Handcrafted](http://gethandcrafted.com/ "Handcrafted &ndash; Ruby on Rails Development Consulting Firm, Interface Design, User Experience, Web Marketing"), a Rails Development Consulting Firm.
 
 Parts of this bundle were ported from the official Ruby Haml TextMate bundle. The filter snippets were ported from [Matt Polito's ruby-haml.tmbundle](http://github.com/mattpolito/ruby-haml.tmbundle/tree "mattpolito's ruby-haml.tmbundle at master - GitHub").
-
-##Installation
-
-1. $ `cd ~/Library/Application\ Support/TextMate/Bundles/`
-2. $ `git clone git://github.com/handcrafted/handcrafted-haml-textmate-bundle.git Haml.tmbundle`
-3. $ `osascript -e 'tell app "TextMate" to reload bundles'`
