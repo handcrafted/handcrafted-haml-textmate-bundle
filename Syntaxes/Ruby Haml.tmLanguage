@@ -245,6 +245,10 @@
 			<key>include</key>
 			<string>#erb</string>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>#javascript</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -274,6 +278,22 @@
 				<dict>
 					<key>include</key>
 					<string>text.html.ruby</string>
+				</dict>
+			</array>
+		</dict>
+		<key>javascript</key>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):javascript</string>
+			<key>end</key>
+			<string>^(?!\1 )</string>
+			<key>name</key>
+			<string>source.js</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
 				</dict>
 			</array>
 		</dict>
