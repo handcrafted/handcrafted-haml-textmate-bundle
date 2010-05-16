@@ -1,15 +1,32 @@
-#Handcrafted HAML TextMate Bundle
+#HAML TextMate Bundle
 
 ##Description
 
 Forked from the Handcrafted HAML TextMate Bundle.  Additions include
 
- * <code>{}</code> not in <code>=""</code> is still recognized by the language as embedded ruby source
- * Added snippet/command <code>ctrl + ></code> (same as the erb keystroke to add <code><%= %></code> and toggle between erb styles) which will insert <code>#{}</code> and toggle between <code>#{ruby code}</code> and <code>#{ ruby code }</code>
- * Added html language (lowest priority). Helpful when your haml includes things like &amp;amp;. Also helpful if you're mixing haml with html.
- * Added more helpful snippets for ruby style attributes (: and => triggers)
- * Updated language so that < and > are recognized as HAML constants (language is still smart enough such that when < and > are used with HTML or erb, it treats it as such)
- * Adding full trigger snippets for common html elements (ie table + tab, span + tab) to supplement the existing short trigger snippets (ie t + table, s + tab)
+####Improved Language
+ * Text inside ERB and Javascript filters are now properly recognized so you get all the syntax highlighting, snippets, commands, etc.
+ * Added built-in html recognition. Helpful when you include html in your haml.
+ * Ruby code inside <code>#{}</code> recognized as embedded ruby
+ * Updated language so that < and > are recognized as HAML constants
+
+####Added snippets and commands
+ * <code>⌘⌥+C</code> converts selection from HTML to HAML (and tries to convert erb to haml style - still beta-y)
+ * <code>⌃+></code> inserts <code>#{}</code> and toggles between <code>#{ruby code}</code> and <code>#{ ruby code }</code>
+ * Added snippets for attributes (<code>:⇥</code> and <code>=></code>)
+ * Added full trigger snippets for common html elements (ie table, br, div, h1, h2, etc.)
+ * <code> ⌘+/</code> uses rails comments -# instead of HTML comments
+ * <code>⌘⌥+X</code> escapes HTML special characters
+ 
+####Other Textmate Bundles
+My bundles work best when use in conjunction with my other bundles:
+ * Rails - http://github.com/phuibonhoa/ruby-on-rails-tmbundle
+ * Ruby - http://github.com/phuibonhoa/ruby-tmbundle
+ * Shoulda - http://github.com/phuibonhoa/ruby-shoulda-tmbundle
+ * HAML - http://github.com/phuibonhoa/handcrafted-haml-textmate-bundle
+ * Sass - http://github.com/phuibonhoa/ruby-sass-tmbundle
+ * JavaScript - http://github.com/phuibonhoa/Javascript-Bundle-Extension
+ * CTags - http://github.com/phuibonhoa/tm-ctags-tmbundle
 
 ##Credits
 
