@@ -24,7 +24,7 @@ Forked from the Handcrafted HAML TextMate Bundle.  Additions include
 2. $ `git clone git://github.com/handcrafted/handcrafted-haml-textmate-bundle.git Haml.tmbundle`
 3. $ `osascript -e 'tell app "TextMate" to reload bundles'`
  
-####Other Textmate Bundles
+##My Other Textmate Bundles
 My bundles work best when use in conjunction with my other bundles:
 
  * Rails - [http://github.com/phuibonhoa/ruby-on-rails-tmbundle](http://github.com/phuibonhoa/ruby-on-rails-tmbundle)
@@ -38,6 +38,7 @@ My bundles work best when use in conjunction with my other bundles:
 ##Credits
 
 Additions by [Philippe Huibonhoa](http://github.com/phuibonhoa)
+
 
 Original Bundle Created by [Adam Stacoviak](http://www.adamstacoviak.com/ "Adam Stacoviak | Web Development, Interface Design, User Experience &amp; Internet Marketing"), co-founder of [Handcrafted](http://gethandcrafted.com/ "Handcrafted &ndash; Ruby on Rails Development Consulting Firm, Interface Design, User Experience, Web Marketing"), a Rails Development Consulting Firm.
 
