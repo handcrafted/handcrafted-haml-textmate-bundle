@@ -214,7 +214,7 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(?==|-|~|!=)</string>
+			<string>^\s*(?==|-|~)</string>
 			<key>end</key>
 			<string>$</string>
 			<key>patterns</key>
@@ -240,6 +240,10 @@
 			<string>&gt;</string>
 			<key>name</key>
 			<string>keyword.other.angle-bracket.haml</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#ruby</string>
 		</dict>
 		<dict>
 			<key>include</key>
@@ -325,6 +329,22 @@
 				<dict>
 					<key>include</key>
 					<string>source.ruby</string>
+				</dict>
+			</array>
+		</dict>
+		<key>ruby</key>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):ruby</string>
+			<key>end</key>
+			<string>^(?!\1 )</string>
+			<key>name</key>
+			<string>source.ruby.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ruby.rails</string>
 				</dict>
 			</array>
 		</dict>
