@@ -21,7 +21,7 @@ Forked from the Handcrafted HAML TextMate Bundle.  Additions include
 ##Installation
 
 1. $ `cd ~/Library/Application\ Support/TextMate/Bundles/`
-2. $ `git clone git://github.com/handcrafted/handcrafted-haml-textmate-bundle.git Haml.tmbundle`
+2. $ `git clone git://github.com/phuibonhoa/handcrafted-haml-textmate-bundle.git Haml.tmbundle`
 3. $ `osascript -e 'tell app "TextMate" to reload bundles'`
 
 If you'd like to install all my bundles, check out this [script](http://gist.github.com/443129) written by [mkdynamic](http://github.com/mkdynamic).  It installs all bundles and backups any existing bundles with conflicting names.  Thanks Mark!
