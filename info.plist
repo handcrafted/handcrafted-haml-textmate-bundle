@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>contactEmailRot13</key>
-	<string>xriva@fo.bet</string>
+	<string>adam@adamstacoviak.com</string>
 	<key>contactName</key>
-	<string>Kevin Ballard</string>
+	<string>Adam Stacoviak</string>
 	<key>deleted</key>
 	<array>
 		<string>22E3E848-CE90-401B-9DFF-9AEF23A3A692</string>
 	</array>
 	<key>description</key>
-	<string>&lt;a href="http://unspace.ca/discover/haml"&gt;HTML Abstraction Markup Language&lt;/a&gt; is a templating engine for Ruby on Rails.</string>
+	<string>Haml TextMate bundle. Fork me on GitHub.</string>
 	<key>mainMenu</key>
 	<dict>
 		<key>items</key>
@@ -194,7 +194,7 @@
 		</dict>
 	</dict>
 	<key>name</key>
-	<string>Ruby Haml</string>
+	<string>Haml-lang</string>
 	<key>ordering</key>
 	<array>
 		<string>330820E8-E917-47F1-B1C7-64CEAF03B444</string>
