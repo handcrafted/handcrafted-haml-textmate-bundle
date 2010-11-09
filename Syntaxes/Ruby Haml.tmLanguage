@@ -84,7 +84,7 @@
 			<key>match</key>
 			<string>#\{\s*(\})</string>
 			<key>name</key>
-			<string>source.ruby.embedded.source</string>
+			<string>source.ruby.rails.embedded.source</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -100,7 +100,7 @@
 			<key>end</key>
 			<string>(?&lt;!\\)\}</string>
 			<key>name</key>
-			<string>source.ruby.embedded.source</string>
+			<string>source.ruby.rails.embedded.source</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -339,7 +339,7 @@
 			<key>end</key>
 			<string>^(?!\1 )</string>
 			<key>name</key>
-			<string>source.ruby.embedded.haml</string>
+			<string>source.ruby.rails.embedded.haml</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -353,7 +353,7 @@
 			<key>begin</key>
 			<string>=|-|~</string>
 			<key>contentName</key>
-			<string>source.ruby.embedded.haml</string>
+			<string>source.ruby.rails.embedded.haml</string>
 			<key>end</key>
 			<string>((do|\{)( \|[^|]+\|)?)$|$|^(?!.*\|\s*$)</string>
 			<key>endCaptures</key>
@@ -361,7 +361,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>source.ruby.embedded.html</string>
+					<string>source.ruby.rails.embedded.html</string>
 				</dict>
 				<key>2</key>
 				<dict>
