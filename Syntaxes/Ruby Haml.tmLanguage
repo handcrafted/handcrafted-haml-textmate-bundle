@@ -253,6 +253,14 @@
 			<key>include</key>
 			<string>#javascript</string>
 		</dict>
+		<dict>
+			<key>include</key>
+			<string>#sass</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#css</string>
+		</dict>
 	</array>
 	<key>repository</key>
 	<dict>
@@ -268,6 +276,22 @@
 			</dict>
 			<key>match</key>
 			<string>(\|)\s*\n</string>
+		</dict>
+		<key>css</key>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):css</string>
+			<key>end</key>
+			<string>^(?!\1 )</string>
+			<key>name</key>
+			<string>source.css</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.css</string>
+				</dict>
+			</array>
 		</dict>
 		<key>erb</key>
 		<dict>
@@ -388,6 +412,22 @@
 				<dict>
 					<key>include</key>
 					<string>#continuation</string>
+				</dict>
+			</array>
+		</dict>
+		<key>sass</key>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):sass</string>
+			<key>end</key>
+			<string>^(?!\1 )</string>
+			<key>name</key>
+			<string>source.sass</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.sass</string>
 				</dict>
 			</array>
 		</dict>
