@@ -5,7 +5,7 @@
 Forked from the Handcrafted HAML TextMate Bundle.  Additions include
 
 ####Improved Language
- * Text inside Ruby, ERB, Javascript filters are now properly recognized so you get all the syntax highlighting, snippets, commands, etc.
+ * Text inside Ruby, ERB, Javascript, Sass, and CSS filters are now properly recognized so you get all the syntax highlighting, snippets, commands, etc.
  * Added built-in html recognition. Helpful when you include html in your haml.
  * Ruby code inside <code>#{}</code> recognized as embedded ruby
  * Updated language so that < and > are recognized as HAML constants
