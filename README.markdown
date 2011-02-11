@@ -39,7 +39,9 @@ My bundles work best when use in conjunction with my other bundles:
 
 ##Credits
 
-By [Philippe Huibonhoa](http://github.com/phuibonhoa)
+![BookRenter.com Logo](http://assets0.bookrenter.com/images/header/bookrenter_logo.gif "BookRenter.com")
+
+Additions by [Philippe Huibonhoa](http://github.com/phuibonhoa) and funded by [BookRenter.com](http://www.bookrenter.com "BookRenter.com").
 
 
 Original bundle can be found [here](http://github.com/handcrafted/handcrafted-haml-textmate-bundle)
