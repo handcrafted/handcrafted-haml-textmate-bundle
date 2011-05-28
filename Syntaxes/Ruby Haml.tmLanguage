@@ -282,7 +282,7 @@
 			<key>begin</key>
 			<string>^(\s*):css</string>
 			<key>end</key>
-			<string>^(?!\1 )</string>
+			<string>^(?!\1\s)</string>
 			<key>name</key>
 			<string>source.css</string>
 			<key>patterns</key>
@@ -298,7 +298,7 @@
 			<key>begin</key>
 			<string>^(\s*):erb</string>
 			<key>end</key>
-			<string>^(?!\1 )</string>
+			<string>^(?!\1\s)</string>
 			<key>name</key>
 			<string>text.html.ruby.embedded.haml</string>
 			<key>patterns</key>
@@ -314,7 +314,7 @@
 			<key>begin</key>
 			<string>^(\s*):javascript</string>
 			<key>end</key>
-			<string>^(?!\1 )</string>
+			<string>^(?!\1\s)</string>
 			<key>name</key>
 			<string>source.js</string>
 			<key>patterns</key>
@@ -361,7 +361,7 @@
 			<key>begin</key>
 			<string>^(\s*):ruby</string>
 			<key>end</key>
-			<string>^(?!\1 )</string>
+			<string>^(?!\1\s)</string>
 			<key>name</key>
 			<string>source.ruby.rails.embedded.haml</string>
 			<key>patterns</key>
