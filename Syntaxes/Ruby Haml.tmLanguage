@@ -255,6 +255,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#coffeescript</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#sass</string>
 		</dict>
 		<dict>
@@ -264,6 +268,22 @@
 	</array>
 	<key>repository</key>
 	<dict>
+		<key>coffeescript</key>
+		<dict>
+			<key>begin</key>
+			<string>^(\s*):coffeescript</string>
+			<key>end</key>
+			<string>^(?!\1\s)</string>
+			<key>name</key>
+			<string>source.coffee</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.coffee</string>
+				</dict>
+			</array>
+		</dict>
 		<key>continuation</key>
 		<dict>
 			<key>captures</key>
