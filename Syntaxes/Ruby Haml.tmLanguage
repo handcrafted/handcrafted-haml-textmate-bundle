@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>fileTypes</key>
@@ -8,9 +8,9 @@
 		<string>sass</string>
 	</array>
 	<key>foldingStartMarker</key>
-	<string>^\s*([-%#\:\.\w\=].*)\s$</string>
+	<string>^(\s)*([-%#\:\.\w\=].*)\s$</string>
 	<key>foldingStopMarker</key>
-	<string>^\s*$</string>
+	<string>^(?!\1\s+)$</string>
 	<key>keyEquivalent</key>
 	<string>^~H</string>
 	<key>name</key>
@@ -25,9 +25,19 @@
 					<key>name</key>
 					<string>punctuation.definition.prolog.haml</string>
 				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.prolog.doctype.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>entity.name.prolog.encoding.haml</string>
+				</dict>
 			</dict>
 			<key>match</key>
-			<string>^(!!!)($|\s.*)</string>
+			<string>^(!!!)(?:\s+(.*)(?:\s+(.*))?)?$</string>
 			<key>name</key>
 			<string>meta.prolog.haml</string>
 		</dict>
@@ -57,7 +67,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>^(?!\1  )</string>
+			<string>^(?!\1 +)</string>
 			<key>name</key>
 			<string>comment.block.haml</string>
 			<key>patterns</key>
@@ -70,7 +80,270 @@
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(?:((%)([\w:]+))|(?=\.|#))</string>
+			<string>^( *)((:)(?i:css))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.filter.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.filter.haml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1 +)</string>
+			<key>name</key>
+			<string>source.css.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.css</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^( *)((:)(?i:javascript))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.filter.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.filter.haml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1 +)</string>
+			<key>name</key>
+			<string>source.js.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.js</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.js.jquery</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^( *)((:)(?i:cdata|plain|escaped|preserve))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.filter.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.filter.haml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1 +)</string>
+			<key>name</key>
+			<string>text.plain.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>text.plain</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^( *)((:)(?i:textile))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.filter.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.filter.haml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1 +)</string>
+			<key>name</key>
+			<string>text.html.textile.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>text.html.textile</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^( *)((:)(?i:ruby))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.filter.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.filter.haml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1  )</string>
+			<key>name</key>
+			<string>source.ruby.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.ruby.rails</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^( *)((:)(?i:erb))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.filter.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.filter.haml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1  )</string>
+			<key>name</key>
+			<string>text.html.ruby.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>text.html.ruby</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^( *)((:)(?i:sass))</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>meta.filter.haml</string>
+				</dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.filter.haml</string>
+				</dict>
+				<key>4</key>
+				<dict>
+					<key>name</key>
+					<string>keyword.other.filter.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1 +)</string>
+			<key>name</key>
+			<string>source.sass.embedded.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>source.sass</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^ *(?:((%)([\w:]+))|(?=\.|#))</string>
 			<key>captures</key>
 			<dict>
 				<key>1</key>
@@ -86,7 +359,7 @@
 				<key>3</key>
 				<dict>
 					<key>name</key>
-					<string>entity.name.tag.haml</string>
+					<string>entity.section.tag.haml</string>
 				</dict>
 			</dict>
 			<key>end</key>
@@ -144,14 +417,34 @@
 					</array>
 				</dict>
 				<dict>
+					<key>match</key>
+					<string>&lt;</string>
+					<key>name</key>
+					<string>keyword.operator.</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>&gt;</string>
+					<key>name</key>
+					<string>punctuation</string>
+				</dict>
+				<dict>
 					<key>include</key>
-					<string>#rubyline</string>
+					<string>#ruby_line</string>
 				</dict>
 				<dict>
 					<key>match</key>
 					<string>/</string>
 					<key>name</key>
 					<string>punctuation.terminator.tag.haml</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#ruby_interpolated</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>text.html</string>
 				</dict>
 			</array>
 		</dict>
@@ -165,20 +458,28 @@
 				</dict>
 			</dict>
 			<key>match</key>
-			<string>^\s*(\\.)</string>
+			<string>^ *(\\.)</string>
 		</dict>
 		<dict>
 			<key>begin</key>
-			<string>^\s*(?==|-|~)</string>
+			<string>^ *(?=\!?[-=~])</string>
 			<key>end</key>
 			<string>$</string>
 			<key>patterns</key>
 			<array>
 				<dict>
 					<key>include</key>
-					<string>#rubyline</string>
+					<string>#ruby_line</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>#ruby_interpolated</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>text.html</string>
 		</dict>
 	</array>
 	<key>repository</key>
@@ -196,10 +497,47 @@
 			<key>match</key>
 			<string>(\|)\s*\n</string>
 		</dict>
-		<key>rubyline</key>
+		<key>ruby_interpolated</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>#{</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.interpolated.ruby</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>(?&lt;![^\\]\\)}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>string.interpolated.ruby</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>source.ruby.rails.embedded.haml</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>source.ruby.rails</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
+		<key>ruby_line</key>
 		<dict>
 			<key>begin</key>
-			<string>=|-|~</string>
+			<string>[-=~]</string>
 			<key>contentName</key>
 			<string>source.ruby.embedded.haml</string>
 			<key>end</key>
@@ -209,7 +547,7 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>source.ruby.embedded.html</string>
+					<string>source.ruby.embedded.haml</string>
 				</dict>
 				<key>2</key>
 				<dict>
