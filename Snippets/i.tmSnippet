@@ -3,12 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%${1:p} $TM_SELECTED_TEXT</string>
+	<string>%i</string>
 	<key>name</key>
-	<string>wrap (selected)</string>
+	<string>i</string>
 	<key>scope</key>
 	<string>text.haml</string>
+	<key>tabTrigger</key>
+	<string>i</string>
 	<key>uuid</key>
-	<string>6BEE3DBD-CF1B-45F6-9E11-0D866EA4C7FD</string>
+	<string>090D9849-B25B-4697-82E7-202EF5DB9E50</string>
 </dict>
 </plist>
