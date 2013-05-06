@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%i</string>
+	<string>%i$1{"aria-hidden" =&gt; "true"}$0</string>
 	<key>name</key>
 	<string>i</string>
 	<key>scope</key>
