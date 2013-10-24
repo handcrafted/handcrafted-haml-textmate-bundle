@@ -9,7 +9,7 @@
 	<key>name</key>
 	<string>Wrap Selection in Open/Close Tag</string>
 	<key>scope</key>
-	<string>text.html,text.haml</string>
+	<string>text.haml</string>
 	<key>uuid</key>
 	<string>7D9DF812-96EE-4BEB-A1B7-C59408E16B56</string>
 </dict>

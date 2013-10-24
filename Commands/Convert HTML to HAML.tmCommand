@@ -5,10 +5,10 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
 
 require 'rubygems'
-gem 'haml'
+require 'haml'
 require 'haml/html'
 
 match = ENV['TM_SELECTED_TEXT'].split("\n").first.match(/^(\s+).*/)
