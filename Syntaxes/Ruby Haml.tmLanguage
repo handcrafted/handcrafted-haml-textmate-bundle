@@ -135,7 +135,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>$|(?!\.|#|\{|\[|=|-|~|/)</string>
+			<string>$|(?!\.|#|\{|\[|\(|=|-|~|/)</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -162,6 +162,25 @@
 						<dict>
 							<key>include</key>
 							<string>source.ruby.rails</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>#continuation</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
+					<string>\((?=.*\)|.*\|\s*$)</string>
+					<key>end</key>
+					<string>\)|$|^(?!.*\|\s*$)</string>
+					<key>name</key>
+					<string>meta.section.attributes.html-style.haml</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#html-style-attributes</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -313,6 +332,37 @@
 				</dict>
 			</array>
 		</dict>
+		<key>entities</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.entity.html</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.entity.html</string>
+						</dict>
+					</dict>
+					<key>match</key>
+					<string>(&amp;)([a-zA-Z0-9]+|#[0-9]+|#x[0-9a-fA-F]+)(;)</string>
+					<key>name</key>
+					<string>constant.character.entity.html</string>
+				</dict>
+				<dict>
+					<key>match</key>
+					<string>&amp;</string>
+					<key>name</key>
+					<string>invalid.illegal.bad-ampersand.html</string>
+				</dict>
+			</array>
+		</dict>
 		<key>erb</key>
 		<dict>
 			<key>begin</key>
@@ -328,6 +378,50 @@
 					<string>text.html.ruby</string>
 				</dict>
 			</array>
+		</dict>
+		<key>html-style-attributes</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#html-tag-generic-attribute</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-double-quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#string-single-quoted</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>#html-unquoted-attribute</string>
+				</dict>
+			</array>
+		</dict>
+		<key>html-tag-generic-attribute</key>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.separator</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(?&lt;=[^=])\b([a-zA-Z0-9:-]+)(=)?</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.haml</string>
+		</dict>
+		<key>html-unquoted-attribute</key>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;==)(?:[^\s&lt;&gt;/'"]|/(?!&gt;))+</string>
+			<key>name</key>
+			<string>string.unquoted.haml</string>
 		</dict>
 		<key>javascript</key>
 		<dict>
@@ -448,6 +542,70 @@
 				<dict>
 					<key>include</key>
 					<string>source.sass</string>
+				</dict>
+			</array>
+		</dict>
+		<key>string-double-quoted</key>
+		<dict>
+			<key>begin</key>
+			<string>"</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>"</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.haml</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.double.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#entities</string>
+				</dict>
+			</array>
+		</dict>
+		<key>string-single-quoted</key>
+		<dict>
+			<key>begin</key>
+			<string>'</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.begin.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>'</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.definition.string.end.haml</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>string.quoted.single.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#entities</string>
 				</dict>
 			</array>
 		</dict>
