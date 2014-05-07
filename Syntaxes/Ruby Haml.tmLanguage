@@ -45,8 +45,45 @@
 			<string>comment.line.slash.haml</string>
 		</dict>
 		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.comment.haml</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>^ *(-#)\s*\S.*$\n?</string>
+			<key>name</key>
+			<string>comment.line.slash.haml</string>
+		</dict>
+		<dict>
 			<key>begin</key>
 			<string>^( *)(/)\s*$</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.comment.haml</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>^(?!\1  )</string>
+			<key>name</key>
+			<string>comment.block.haml</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>text.haml</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>^( *)(-#)\s*$</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>2</key>
