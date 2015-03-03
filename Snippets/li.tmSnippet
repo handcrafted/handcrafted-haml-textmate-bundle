@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%li ${5:Lorem ipsum...}$0</string>
+	<string>%li$0</string>
 	<key>name</key>
 	<string>li</string>
 	<key>scope</key>

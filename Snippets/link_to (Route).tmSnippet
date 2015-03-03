@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>= link_to "${1:Anchor Text}", ${2:route}_url</string>
+	<string>= link_to("${1:Anchor Text}", ${2:route}_url)</string>
 	<key>keyEquivalent</key>
 	<string>^L</string>
 	<key>name</key>

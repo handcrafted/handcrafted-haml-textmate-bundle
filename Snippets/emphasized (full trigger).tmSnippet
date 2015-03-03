@@ -5,12 +5,12 @@
 	<key>content</key>
 	<string>%em$0</string>
 	<key>name</key>
-	<string>emphasized</string>
+	<string>emphasized (full trigger)</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>e</string>
+	<string>em</string>
 	<key>uuid</key>
-	<string>4F5A07B2-9672-4F37-9D5E-F3D4FE5E81D9</string>
+	<string>4627C68B-9B62-454C-99B1-4AE99017DBEE</string>
 </dict>
 </plist>

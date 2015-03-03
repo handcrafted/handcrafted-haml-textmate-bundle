@@ -4,8 +4,6 @@
 <dict>
 	<key>content</key>
 	<string>%${1:p} $TM_SELECTED_TEXT</string>
-	<key>keyEquivalent</key>
-	<string>^W</string>
 	<key>name</key>
 	<string>wrap (selected)</string>
 	<key>scope</key>

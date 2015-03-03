@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%em$0</string>
+	<string>%dl$0</string>
 	<key>name</key>
-	<string>emphasized</string>
+	<string>dl</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>e</string>
+	<string>dl</string>
 	<key>uuid</key>
-	<string>4F5A07B2-9672-4F37-9D5E-F3D4FE5E81D9</string>
+	<string>AEADC4F5-C60A-4CF3-9D50-50BB56225677</string>
 </dict>
 </plist>

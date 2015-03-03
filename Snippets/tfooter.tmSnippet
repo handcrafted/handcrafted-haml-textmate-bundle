@@ -12,7 +12,7 @@
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>t</string>
+	<string>tfooter</string>
 	<key>uuid</key>
 	<string>F7957E66-32E7-424C-88E5-39DF71CE2F8D</string>
 </dict>

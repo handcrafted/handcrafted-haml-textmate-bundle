@@ -3,14 +3,20 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%em$0</string>
+	<string>%table
+  %thead
+    %tr
+      %th$0
+  %tbody
+    %tr
+      %td</string>
 	<key>name</key>
-	<string>emphasized</string>
+	<string>table (full trigger)</string>
 	<key>scope</key>
 	<string>text.haml</string>
 	<key>tabTrigger</key>
-	<string>e</string>
+	<string>table</string>
 	<key>uuid</key>
-	<string>4F5A07B2-9672-4F37-9D5E-F3D4FE5E81D9</string>
+	<string>1AA30B14-C40D-46F6-9089-013F61C9E684</string>
 </dict>
 </plist>

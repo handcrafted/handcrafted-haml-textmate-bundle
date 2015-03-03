@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>, :${1:id} =&gt; "${2:selector}"$0</string>
+	<string>, :${1:id} =&gt; ${3:"${2:selector}"}$0</string>
 	<key>name</key>
 	<string>}, :id =&gt; "selector"</string>
 	<key>scope</key>

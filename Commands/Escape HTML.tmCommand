@@ -7,31 +7,26 @@
 	<key>command</key>
 	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby
 
-require 'rubygems'
-require 'haml'
-require 'haml/html'
-
-match = ENV['TM_SELECTED_TEXT'].split("\n").first.match(/^(\s+).*/)
-if match
-  initial_tabs = match[1]
-else
-  initial_tabs = ''
-end
-
-out = Haml::HTML.new(ENV['TM_SELECTED_TEXT'].gsub(/\s*&lt;%\s*\s*end\s*%&gt;\s*/, '').gsub(/\s*%&gt;/, '').gsub(/&lt;%=\s*/, '= ').gsub(/&lt;%-?\s*/, '- ')).render.gsub('\-','-').gsub('\=', '=')
-out = out.split("\n").map { |line| "#{initial_tabs}#{line}" }.join("\n")
+require 'cgi'
+out = CGI.escapeHTML($stdin.read)
+out.gsub!("'", '&amp;#39;')
+out.gsub!("“", '&amp;#8220;')
+out.gsub!("”", '&amp;#8221;')
+out.gsub!("…", '&amp;#8230;')
 print out</string>
+	<key>fallbackInput</key>
+	<string>line</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>~@c</string>
+	<string>~@x</string>
 	<key>name</key>
-	<string>Convert HTML to HAML</string>
+	<string>Escape HTML</string>
 	<key>output</key>
 	<string>replaceSelectedText</string>
 	<key>scope</key>
 	<string>text.html,text.haml</string>
 	<key>uuid</key>
-	<string>9CD5ABE1-9E49-42BB-9C09-AEE74103FB53</string>
+	<string>7F790F32-5D23-4111-8964-9BF80A5B0498</string>
 </dict>
 </plist>

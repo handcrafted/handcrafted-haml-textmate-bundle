@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>%em$0</string>
+	<string>=&gt; ${3:"${2:selector}"}$0</string>
 	<key>name</key>
-	<string>emphasized</string>
+	<string>=&gt; "selector"</string>
 	<key>scope</key>
-	<string>text.haml</string>
+	<string>text.haml, meta.section.attributes.haml</string>
 	<key>tabTrigger</key>
-	<string>e</string>
+	<string>=&gt;</string>
 	<key>uuid</key>
-	<string>4F5A07B2-9672-4F37-9D5E-F3D4FE5E81D9</string>
+	<string>DEEE9F24-C83E-4979-901E-E884383D1D3D</string>
 </dict>
 </plist>
